@@ -51,7 +51,7 @@ async function main() {
                         if (!obj.bibtex) obj.bibtex = null;
                         if (!obj.project) obj.project = null;
                         if (!obj.tags) obj.tags = [];
-                        if (!obj.awards) obj.tag = [];
+                        if (!obj.awards) obj.awards = [];
                         collection.push(obj);
                     }
                 });
