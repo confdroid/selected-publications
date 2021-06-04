@@ -31,6 +31,11 @@
 ]
 ```
 
+In case you are frustrated by the limitation of `json` format, e.g., need to escape special characters. 
+It is also possible to define the publication in `js` files. 
+We provide a template in [publications.template.js](./publications.template.js). 
+You may modify it and add it to the `collection` folder. 
+
 ## Test Your JSON Structure
 
 You need to have Node.js environment.

@@ -6,6 +6,7 @@ import Joi from "joi";
 import glob from 'glob';
 import path from "path";
 import * as fs from "fs";
+import {strict} from "assert";
 
 async function main() {
     const schema: Joi.Schema = Joi.object().keys({
@@ -29,61 +30,73 @@ async function main() {
     let exitCode: number = 0;
 
     // scan collection folder
-    glob(path.join(__dirname, '..', 'collection/**/*.json'), (err, files) => {
-        if (err) throw err;
-        const collection: unknown[] = [];
-        for (const file of files) {
-            const content = fs.readFileSync(file, {encoding: 'utf-8'});
-            try {
-                const arr = JSON.parse(content);
-                if (!Array.isArray(arr)) {
-                    console.error("[Error] JSON object in", file, "is not an array");
-                    if (dryRun) exitCode = 1;
-                    continue;
-                }
-                const validations: Joi.ValidationResult[] = [];
-                arr.forEach(obj => {
-                    const r = schema.validate(obj);
-                    validations.push(r);
-                    if (!r.error) {
-                        if (!obj.url) obj.url = null;
-                        if (!obj.abstract) obj.abstract = null;
-                        if (!obj.bibtex) obj.bibtex = null;
-                        if (!obj.project) obj.project = null;
-                        if (!obj.tags) obj.tags = [];
-                        if (!obj.awards) obj.awards = [];
-                        collection.push(obj);
-                    }
-                });
-                if (validations.some(r => r.error)) {
-                    if (dryRun) exitCode = 1;
-                    console.log('[Warning] Invalid JSON structure with', validations.filter(r => r.error).length, 'errors in', file);
-                    validations.forEach((r, index) => {
-                        if (r.error) {
-                            console.log("==> Item with index", index)
-                            r.error.details.forEach((e) => console.error(`====>`, e.message));
-                        }
-                    })
-                }
-            } catch (e) {
-                console.error("[Error] Failed to parse", file);
-                console.error(e.toString());
-                if (dryRun) exitCode = 1;
-            }
-        }
-        if (!dryRun) {
-            console.log();
-            fs.writeFileSync(path.join(__dirname, '..', 'public', 'bundle.json'), JSON.stringify(collection));
-            console.log("Bundle complete");
-        } else {
-            if (exitCode === 0) {
-                console.log("No errors detected.");
+    const files: string[] = [];
+    let ffs = glob.sync(path.join(__dirname, '..', 'collection/**/*.json'));
+    files.push(...ffs);
+    ffs = glob.sync(path.join(__dirname, '..', 'collection/**/*.js'));
+    files.push(...ffs);
+    console.log(files);
+    const collection: unknown[] = [];
+    for (const file of files) {
+        try {
+            let arr: unknown[];
+            if (path.extname(file).toLowerCase() === '.json') {
+                const content = fs.readFileSync(file, {encoding: 'utf-8'});
+                arr = JSON.parse(content);
+            } else if (path.extname(file).toLowerCase() === '.js') {
+                arr = require(file);
             } else {
-                console.warn("Errors detected as above. Please try to fix them.")
+                continue;
             }
-        }
-    });
 
+            if (!Array.isArray(arr)) {
+                console.error("[Error] JSON object in", file, "is not an array");
+                if (dryRun) {
+                }
+                exitCode = 1;
+                continue;
+            }
+            const validations: Joi.ValidationResult[] = [];
+            arr.forEach(obj => {
+                const r = schema.validate(obj);
+                validations.push(r);
+                if (!r.error) {
+                    if (!obj.url) obj.url = null;
+                    if (!obj.abstract) obj.abstract = null;
+                    if (!obj.bibtex) obj.bibtex = null;
+                    if (!obj.project) obj.project = null;
+                    if (!obj.tags) obj.tags = [];
+                    if (!obj.awards) obj.awards = [];
+                    collection.push(obj);
+                }
+            });
+            if (validations.some(r => r.error)) {
+                if (dryRun) exitCode = 1;
+                console.log('[Warning] Invalid JSON structure with', validations.filter(r => r.error).length, 'errors in', file);
+                validations.forEach((r, index) => {
+                    if (r.error) {
+                        console.log("==> Item with index", index)
+                        r.error.details.forEach((e) => console.error(`====>`, e.message));
+                    }
+                })
+            }
+        } catch (e) {
+            console.error("[Error] Failed to parse", file);
+            console.error(e.toString());
+            if (dryRun) exitCode = 1;
+        }
+    }
+    if (!dryRun) {
+        console.log();
+        fs.writeFileSync(path.join(__dirname, '..', 'public', 'bundle.json'), JSON.stringify(collection));
+        console.log("Bundle complete");
+    } else {
+        if (exitCode === 0) {
+            console.log("No errors detected.");
+        } else {
+            console.warn("Errors detected as above. Please try to fix them.")
+        }
+    }
 }
 
 if (require.main === module) {
