@@ -63,7 +63,7 @@ async function main() {
                 if (!r.error) {
                     if (!obj.url) obj.url = null;
                     if (!obj.abstract) obj.abstract = null;
-                    if (!obj.bibtex) obj.bibtex = null;
+                    if (!obj.bibtex) obj.bibtex = null; else obj.bibtex = obj.bibtex.trim();
                     if (!obj.project) obj.project = null;
                     if (!obj.tags) obj.tags = [];
                     if (!obj.awards) obj.awards = [];
