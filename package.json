@@ -5,5 +5,20 @@
   "repository": "https://github.com/CastleLab/selected-publications",
   "author": "CASTLE Research Group",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "test": "DRY_RUN=true ts-node src/bundle.ts",
+    "build": "ts-node src/bundle.ts"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/joi": "^17.2.3",
+    "@types/node": "^15.12.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "glob": "^7.1.7",
+    "joi": "^17.4.0"
+  }
 }
