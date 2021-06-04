@@ -1,0 +1,9 @@
+{
+  "name": "selected-publications",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/CastleLab/selected-publications",
+  "author": "CASTLE Research Group",
+  "license": "MIT",
+  "private": true
+}
