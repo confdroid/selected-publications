@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "test": "DRY_RUN=true ts-node src/bundle.ts",
+    "test": "ts-node src/bundle.ts --dry-run",
     "build": "ts-node src/bundle.ts"
   },
   "devDependencies": {

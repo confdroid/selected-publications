@@ -23,7 +23,7 @@ async function main() {
         project: Joi.string(),
     });
 
-    const dryRun = process.env.DRY_RUN;
+    const dryRun = process.argv[2] === '--dry-run';
     if (dryRun) {
         console.log("Running in dry-run mode. No bundle json will be output.");
     }
@@ -35,7 +35,9 @@ async function main() {
     files.push(...ffs);
     ffs = glob.sync(path.join(__dirname, '..', 'collection/**/*.js'));
     files.push(...ffs);
-    console.log(files);
+    console.log(`Found ${files.length} publication declaration files to bundle:`);
+    files.forEach(f => console.log(`==> ${f}`));
+    console.log();
     const collection: unknown[] = [];
     for (const file of files) {
         try {
@@ -89,7 +91,7 @@ async function main() {
     if (!dryRun) {
         console.log();
         fs.writeFileSync(path.join(__dirname, '..', 'public', 'bundle.json'), JSON.stringify(collection));
-        console.log("Bundle complete");
+        console.log("Bundle complete, output in public/bundle.json");
     } else {
         if (exitCode === 0) {
             console.log("No errors detected.");
