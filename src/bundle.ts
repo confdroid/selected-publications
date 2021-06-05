@@ -63,10 +63,11 @@ async function main() {
                 const r = schema.validate(obj);
                 validations.push(r);
                 if (!r.error) {
-                    if (!obj.paperUrl) obj.url = null; obj.url = obj.paperUrl;
+                    if (!obj.paperUrl) obj.paperUrl = null;
                     if (!obj.abstract) obj.abstract = null;
                     if (!obj.bibtex) obj.bibtex = null; else obj.bibtex = obj.bibtex.trim();
-                    if (!obj.projectUrl) obj.project = null; else obj.project = obj.projectUrl;
+                    if (!obj.projectUrl) obj.projectUrl = null;
+                    if (!obj.slidesUrl) obj.slidesUrl = null;
                     if (!obj.tags) obj.tags = [];
                     if (!obj.awards) obj.awards = [];
                     collection.push(obj);

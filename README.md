@@ -22,6 +22,7 @@
     "abstract": "(optional) abstract of your paper",
     "projectUrl": "(optional) project url",
     "paperUrl": "(optional) paper url",
+    "slidesUrl": "(optional) slides url",
     "bibtex": "(optional) bibtex"
   },
   {
