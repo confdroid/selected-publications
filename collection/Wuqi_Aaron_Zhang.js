@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Wuqi Zhang", "Lili Wei", "Shuqing Li", "Yepang Liu", "Shing-Chi Cheung"
     ],
-    "venue": "Proceedings of the 29th ACM Joint European SoftwareEngineering Conference and Symposium on the Foundations of Software Engi-neering (ESEC/FSE ’21)",
+    "venue": "Proceedings of the 29th ACM Joint European SoftwareEngineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE ’21)",
     "venueShort": "ESEC/FSE",
     "tags": [
       "Decentralized Applications", "Testing", "Blockchain"

@@ -34,7 +34,7 @@
     "authors": [
       "Qingchao Shen", "Haoyang Ma", "Junjie Chen", "Yongqiang Tian", "Shing-Chi Cheung", "Xiang Chen"
     ],
-    "venue": "Proceedings of the 29th ACM Joint European SoftwareEngineering Conference and Symposium on the Foundations of Software Engi-neering (ESEC/FSE ’21)",
+    "venue": "Proceedings of the 29th ACM Joint European SoftwareEngineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE ’21)",
     "venueShort": "ESEC/FSE",
     "tags": [
       "DL Compiler", "Empirical Study"
