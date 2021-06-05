@@ -1,7 +1,7 @@
 module.exports = [
     {
         title: "Title of your paper",
-        date: "date of publication, e.g., 2021-12-31, following ECMA date string format: https://262.ecma-international.org/11.0/#sec-date-time-string-format",
+        date: "date of publication, e.g., 2021-12-31 or 2021, following ECMA date string format: https://262.ecma-international.org/11.0/#sec-date-time-string-format",
         authors: [
             "First Author", "Second Author"
         ],
@@ -13,7 +13,9 @@ module.exports = [
             "Methodology",
             "Users can use tags to filter and find the publications they are interested in"
         ],
-        abstract: "(optional) abstract of your paper",
+        abstract: `
+            (optional) abstract of your paper (support multiline)
+        `,
         projectUrl: "(optional) project url",
         paperUrl: "(optional) paper url",
         slidesUrl: "(optional) slides url",
