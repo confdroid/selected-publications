@@ -6,7 +6,6 @@ import Joi from "joi";
 import glob from 'glob';
 import path from "path";
 import * as fs from "fs";
-import {strict} from "assert";
 
 async function main() {
     const schema: Joi.Schema = Joi.object().keys({
@@ -17,11 +16,11 @@ async function main() {
         venueShort: Joi.string().min(1).required(),
         tags: Joi.array().items(Joi.string()),
         awards: Joi.array().items(Joi.string()),
-        paperUrl: Joi.string().min(1),
-        abstract: Joi.string(),
-        bibtex: Joi.string(),
-        projectUrl: Joi.string(),
-        slidesUrl: Joi.string(),
+        paperUrl: Joi.string().allow(null, ''),
+        abstract: Joi.string().allow(null, ''),
+        bibtex: Joi.string().allow(null, ''),
+        projectUrl: Joi.string().allow(null, ''),
+        slidesUrl: Joi.string().allow(null, ''),
     });
 
     const dryRun = process.argv[2] === '--dry-run';
