@@ -21,18 +21,19 @@ git pull
 
 ### Add Publication Declaration File
 
-We use a declaration file in `js` or `json` format to declare the publications.
+We use a declaration file in `js`format to declare the publications.
 To add publications:
-1. Copy and rename a template ([json template](./publications.template.json) and [js template](./publications.template.js)), e.g., firstName_lastName.json, then put it into `collection` folder (or any sub-folders in it).
+1. Copy and rename a template ([js template](./publications.template.js)), e.g., firstName_lastName.js, then put it into `collection` folder (or any sub-folders in it).
 2. Modify the template file and declare your publications. You can find explanations of data fields in the template files.
 3. (Optional) Test your declaration file, as explained in section blow: Test Your Publication Declaration File.
 3. Commit your changes in git and push to this repository. CASTLE members in the [CastleLab](https://github.com/CastleLab) GitHub organization should have the privilege to push to this repository. If you don't, please contact Wuqi Aaron Zhang (wuqi.zhang@connect.ust.hk).
    
 Note that you can declare multiple publications in one file since the template file declares an array in it.
 
-The `json` declaration file is the most common choice. 
-But sometimes the limitations of `json` syntax is annoying, e.g., cannot add comments, special characters need to be escaped, no multiline strings, etc.
-In these cases, you can choose to use `js` files, which is more flexible in terms of syntax.
+We prefer `js` declaration file because the limitations of `json` syntax is annoying, e.g., cannot add comments, special characters need to be escaped, no multiline strings, etc. 
+It is inconvenient to add abstract and bibtex in `json` files since they are usually multiline strings and may contain special characters. 
+Nevertheless, you can still use [json template](./publications.template.json) if you like. 
+
 
 ## Test Your Publication Declaration File (Optional)
 
