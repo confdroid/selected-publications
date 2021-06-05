@@ -20,8 +20,8 @@
       "Tag 2"
     ],
     "abstract": "(optional) abstract of your paper",
-    "project": "(optional) project url",
-    "url": "(optional) paper url",
+    "projectUrl": "(optional) project url",
+    "paperUrl": "(optional) paper url",
     "bibtex": "(optional) bibtex"
   },
   {

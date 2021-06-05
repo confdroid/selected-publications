@@ -17,10 +17,10 @@ async function main() {
         venueShort: Joi.string().min(1).required(),
         tags: Joi.array().items(Joi.string()),
         awards: Joi.array().items(Joi.string()),
-        url: Joi.string().min(1),
+        paperUrl: Joi.string().min(1),
         abstract: Joi.string(),
         bibtex: Joi.string(),
-        project: Joi.string(),
+        projectUrl: Joi.string(),
     });
 
     const dryRun = process.argv[2] === '--dry-run';
@@ -63,10 +63,10 @@ async function main() {
                 const r = schema.validate(obj);
                 validations.push(r);
                 if (!r.error) {
-                    if (!obj.url) obj.url = null;
+                    if (!obj.paperUrl) obj.url = null; obj.url = obj.paperUrl;
                     if (!obj.abstract) obj.abstract = null;
                     if (!obj.bibtex) obj.bibtex = null; else obj.bibtex = obj.bibtex.trim();
-                    if (!obj.project) obj.project = null;
+                    if (!obj.projectUrl) obj.project = null; else obj.project = obj.projectUrl;
                     if (!obj.tags) obj.tags = [];
                     if (!obj.awards) obj.awards = [];
                     collection.push(obj);
