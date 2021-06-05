@@ -11,6 +11,7 @@ module.exports = [
             "Tags are those keywords used to categorize the publication by:",
             "Research topic",
             "Methodology",
+            "Please consider reuse the existing tags in the publication website: http://sccpu2.cse.ust.hk/castle/publication/",
             "Users can use tags to filter and find the publications they are interested in"
         ],
         abstract: `

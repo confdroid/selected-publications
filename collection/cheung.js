@@ -8,7 +8,7 @@ module.exports = [
         venue: "IEEE Trans. Serv. Comput.",
         venueShort: "TSC",
         tags: [
-            "Blockchain", "Smart Contracts", "Analysis", "Security"
+            "Blockchain", "Smart Contracts", "Program Analysis", "Security"
         ],
         abstract: `
 Ethereum smart contracts are programs that can be collectively executed by a network of mutually untrusted nodes. Smart contracts handle and transfer assets of values, offering strong incentives for malicious attacks. Intrusion attacks are a popular type of malicious attacks. In this article, we propose ContractGuard, the first intrusion detection system (IDS) to defend Ethereum smart contracts against such attacks. Like IDSs for conventional programs, ContractGuard detects intrusion attempts as abnormal control flow. However, existing IDS techniques/tools are inapplicable to Ethereum smart contracts due to Ethereum's decentralized nature and its highly restrictive execution environment. To address these issues, we design ContractGuard by embedding it in the contracts to profile context-tagged acyclic paths, and optimizing it under the Ethereum gas-oriented performance model. The main goal is to minimize the overheads, to which the users will be extremely sensitive since the cost needs to be paid upfront in digital concurrency. Empirical investigation using real-life contracts deployed in the Ethereum mainnet shows that on average, ContractGuard only adds to 36.14 percent of the deployment overhead and 28.27 percent of the runtime overhead. Furthermore, we conducted controlled experiments and show that ContractGuard successfully guard against attacks on all real-world vulnerabilities and 83 percent of the seeded vulnerabilities.
