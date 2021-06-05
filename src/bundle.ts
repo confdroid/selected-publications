@@ -61,7 +61,7 @@ async function main() {
             }
             const validations: Joi.ValidationResult[] = [];
             arr.forEach(obj => {
-                const r = schema.validate(obj);
+                const r = schema.validate(obj, {allowUnknown: true});
                 validations.push(r);
                 if (!r.error) {
                     if (!obj.paperUrl) obj.paperUrl = null;
