@@ -21,6 +21,7 @@ async function main() {
         abstract: Joi.string(),
         bibtex: Joi.string(),
         projectUrl: Joi.string(),
+        slidesUrl: Joi.string(),
     });
 
     const dryRun = process.argv[2] === '--dry-run';
