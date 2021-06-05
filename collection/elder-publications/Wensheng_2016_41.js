@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Wensheng Dou", "Liang Xu", "Shing-Chi Cheung", "Chushu Gao", "Jun Wei", "Tao Huang"
     ],
-    "venue": "38th International Conference on Software Engineering (ICSE 2016 - SEIP), Companion Volume, Austin, TX, USA, May 2016, pp",
+    "venue": "38th International Conference on Software Engineering (ICSE 2016 - SEIP), Companion Volume, Austin, TX, USA, May 2016",
     "venueShort": "ICSE SEIP",
     "tags": [],
     "abstract": `

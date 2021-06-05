@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Yepang Liu", "Chang Xu", "Shing-Chi Cheung", "Valerio Terrangi"
     ],
-    "venue": "24th ACM SIGSOFT International Symposium on the Foundations of Software Engineering (FSE 2016), Seattle, WA, USA, Nov 2016,                 pp",
+    "venue": "24th ACM SIGSOFT International Symposium on the Foundations of Software Engineering (FSE 2016), Seattle, WA, USA, Nov 2016",
     "venueShort": "FSE ",
     "tags": [],
     "abstract": `

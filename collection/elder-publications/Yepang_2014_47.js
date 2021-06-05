@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Yepang Liu", "Chang Xu", "Shing-Chi Cheung", "Jian Lv"
     ],
-    "venue": "IEEE Transactions on Software Engineering 40(9), September 2014, pp",
+    "venue": "IEEE Transactions on Software Engineering 40(9), September 2014",
     "venueShort": "TSE",
     "tags": [],
     "abstract": `

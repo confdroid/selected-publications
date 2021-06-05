@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Yepang Liu", "Chang Xu", "Shing-Chi Cheung", "Wenhua Yang"
     ],
-    "venue": "International Journal of Software and Informatics (IJSI), vol",
+    "venue": "International Journal of Software and Informatics (IJSI)",
     "venueShort": "IJSI",
     "tags": [],
     "abstract": `

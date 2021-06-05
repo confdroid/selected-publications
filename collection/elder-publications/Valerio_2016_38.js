@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Valerio Terragni", "Yepang Liu", "Shing-Chi Cheung"
     ],
-    "venue": "Proceedings of the 25th International Symposium on Software Testing and Analysis (ISSTA 2016), Saarbrücken, Germany, July 2016, pp",
+    "venue": "Proceedings of the 25th International Symposium on Software Testing and Analysis (ISSTA 2016), Saarbrücken, Germany, July 2016",
     "venueShort": "ISSTA",
     "tags": [],
     "abstract": `

@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Rongxin Wu", "Ming Wen", "Shing-Chi Cheung", "Hongyu Zhang"
     ],
-    "venue": "Journal of Empirical Software Engineering (EmSE 2018), Vol",
+    "venue": "Journal of Empirical Software Engineering (EmSE 2018)",
     "venueShort": "EmSE",
     "tags": [],
     "abstract": `

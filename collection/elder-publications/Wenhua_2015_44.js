@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Wenhua Yang", "Yepang Liu", "Chang Xu", "Shing-Chi Cheung"
     ],
-    "venue": "SCIENCE CHINA Information Sciences (SCIS) 58(5), May 2015, pp",
+    "venue": "SCIENCE CHINA Information Sciences (SCIS) 58(5), May 2015",
     "venueShort": "SCIS",
     "tags": [],
     "abstract": `

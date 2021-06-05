@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Yueqi Li", "Shing-Chi Cheung"
     ],
-    "venue": "29th IEEE/ACM International Conference on Automated Software Engineering (ASE 2014), Vasteras, Sweden, September 2014, pp",
+    "venue": "29th IEEE/ACM International Conference on Automated Software Engineering (ASE 2014), Vasteras, Sweden, September 2014",
     "venueShort": "ASE",
     "tags": [],
     "abstract": `

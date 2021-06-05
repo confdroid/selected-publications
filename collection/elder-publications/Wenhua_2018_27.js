@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Wenhua Yang", "Chang Xu", "Minxue Pan", "Chun Cao", "Xiaoxing Ma", "Jian Lu"
     ],
-    "venue": "The Journal of Systems and Software (JSS), Vol",
+    "venue": "The Journal of Systems and Software (JSS)",
     "venueShort": "JSS",
     "tags": [],
     "abstract": `

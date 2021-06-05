@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Tianxiao Gu", "Xiaoxing Ma", "Chang Xu", "Yanyan Jiang", "Chun Cao", "Jian Lu"
     ],
-    "venue": "32nd European Conference on Object-Oriented Programming (ECOOP 2018), Article 19, pp",
+    "venue": "32nd European Conference on Object-Oriented Programming (ECOOP 2018), Article 19",
     "venueShort": "ECOOP",
     "tags": [],
     "abstract": `

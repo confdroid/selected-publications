@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Yepang Liu", "Chang Xu", "Shing-Chi Cheung"
     ],
-    "venue": "IEEE Software 32(1), Jan/Feb 2015, pp",
+    "venue": "IEEE Software 32(1), Jan/Feb 2015",
     "venueShort": "IEEE SOFTWARE",
     "tags": [],
     "abstract": `

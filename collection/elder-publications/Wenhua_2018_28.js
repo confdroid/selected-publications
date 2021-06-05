@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Wenhua Yang", "Chang Xu", "Minxue Pan", "Xiaoxing Ma", "Jian Lu"
     ],
-    "venue": "ACM Transactions on Internet Technology (TOIT), Vol",
+    "venue": "ACM Transactions on Internet Technology (TOIT)",
     "venueShort": "TOIT",
     "tags": [],
     "abstract": `

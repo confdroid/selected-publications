@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Rongxin Wu", "Hongyu Zhang", "Shing-Chi Cheung", "Sunghun Kim"
     ],
-    "venue": "International Symposium on Software Testing and Analysis (ISSTA 2014), San Jose, California, USA, July 2014, pp",
+    "venue": "International Symposium on Software Testing and Analysis (ISSTA 2014), San Jose, California, USA, July 2014",
     "venueShort": "ISSTA",
     "tags": [],
     "abstract": `

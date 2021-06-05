@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Yueqi Li", "Shing-Chi Cheung", "Xiangyu Zhang", "Yepang Liu"
     ],
-    "venue": "ACM Transactions on Software Engineering and Methodology 23(4), August 2014, 34:1-32",
+    "venue": "ACM Transactions on Software Engineering and Methodology 23(4), August 2014",
     "venueShort": "TOSEM",
     "tags": [],
     "abstract": `

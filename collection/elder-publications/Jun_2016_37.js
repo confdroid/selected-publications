@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Jun Sui", "Chang Xu", "Shing-Chi Cheung", "Wang Xi", "Yanyan Jiang", "Chun Cao", "Xiaoxing Ma", "Jian Lu"
     ],
-    "venue": "Information and Software Technology (IST), Volume 74, 2016, pp",
+    "venue": "Information and Software Technology (IST) 2016",
     "venueShort": "IST",
     "tags": [],
     "abstract": `

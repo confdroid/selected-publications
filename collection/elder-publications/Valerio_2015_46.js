@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Valerio Terragni", "Shing-Chi Cheung", "Charles Zhang"
     ],
-    "venue": "37th International Conference on Software Engineering (ICSE 2015), Florence, Italy, May 16-24, 2015, pp",
+    "venue": "37th International Conference on Software Engineering (ICSE 2015), Florence, Italy, May 16-24, 2015",
     "venueShort": "ICSE",
     "tags": [],
     "abstract": `

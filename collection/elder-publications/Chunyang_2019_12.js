@@ -1,11 +1,11 @@
 module.exports = [
   {
-    "title": "K",
+    "title": "Sifter: A Service Isolation Strategy for Internet Applications",
     "date": "2019",
     "authors": [
-      "Chunyang Ye", "Shing-Chi Cheung", "W"
+      "Chunyang Ye", "Shing-Chi Cheung", "W.K. Chan"
     ],
-    "venue": "Chan",
+    "venue": "IEEE Transactions on Services Computing 2019",
     "venueShort": "TSC",
     "tags": [],
     "abstract": `

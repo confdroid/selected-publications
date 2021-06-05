@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Wensheng Dou", "Shing-Chi Cheung", "Jun Wei"
     ],
-    "venue": "36th International Conference on Software Engineering (ICSE 2014), Hyderabad, India, May-Jun 2014, pp",
+    "venue": "36th International Conference on Software Engineering (ICSE 2014), Hyderabad, India, May-Jun 2014",
     "venueShort": "ICSE",
     "tags": [],
     "abstract": `

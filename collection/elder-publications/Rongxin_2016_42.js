@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Rongxin Wu", "Xiao Xiao", "Shing-Chi Cheung", "Hongyu Zhang", "Charles Zhang"
     ],
-    "venue": "43rd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL 2016), St",
+    "venue": "43rd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL 2016)",
     "venueShort": "POPL",
     "tags": [],
     "abstract": `

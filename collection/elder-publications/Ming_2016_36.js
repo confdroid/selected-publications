@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Ming Wen", "Rongxin Wu", "Shing-Chi Cheung"
     ],
-    "venue": "31st IEEE/ACM International Conference on Automated Software Engineering (ASE 2016), Singapore, Sept 2016, pp",
+    "venue": "31st IEEE/ACM International Conference on Automated Software Engineering (ASE 2016), Singapore, Sept 2016",
     "venueShort": "ASE",
     "tags": [],
     "abstract": `

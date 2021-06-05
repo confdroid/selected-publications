@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Jiarong Wu", "Yanyan Jiang", "Chang Xu", "Shing-Chi Cheung", "Xiaoxing Ma", "Jian Lu"
     ],
-    "venue": "40th International Conference on Software Engineering (ICSE 2018 Poster), pp",
+    "venue": "40th International Conference on Software Engineering (ICSE 2018 Poster)",
     "venueShort": "ICSE Poster",
     "tags": [],
     "abstract": `

@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Jue Wang", "Yanyan Jiang", "Chang Xu", "Qiwei Li", "Tianxiao Gu", "Jun Ma", "Xiaoxing Ma", "Jian Lu"
     ],
-    "venue": "Science of Computer Programming (SCP), Vol",
+    "venue": "Science of Computer Programming (SCP)",
     "venueShort": "SCP",
     "tags": [],
     "abstract": `
