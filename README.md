@@ -26,7 +26,7 @@ To add publications:
 1. Copy and rename a template ([json template](./publications.template.json) and [js template](./publications.template.js)), e.g., firstName_lastName.json, then put it into `collection` folder (or any sub-folders in it).
 2. Modify the template file and declare your publications. You can find explanations of data fields in the template files.
 3. (Optional) Test your declaration file, as explained in section blow: Test Your Publication Declaration File.
-3. Commit your changes in git and push to this repository. CASTLE members in the [CastleLab](https://github.com/CastleLab) GitHub organization should have the privilege to push to this repository. If you don't, please contact Wuqi Aaron Zhang (wzhangcb@connect.ust.hk).
+3. Commit your changes in git and push to this repository. CASTLE members in the [CastleLab](https://github.com/CastleLab) GitHub organization should have the privilege to push to this repository. If you don't, please contact Wuqi Aaron Zhang (wuqi.zhang@connect.ust.hk).
    
 Note that you can declare multiple publications in one file since the template file declares an array in it.
 
@@ -54,7 +54,7 @@ Your publications will automatically added on CASTLE HomePage.
 
 ## Contact
 
-This repository and publication website are maintained by Wuqi Aaron Zhang ([@Troublor](https://github.com/Troublor)).
+This repository and publication website are maintained by Wuqi Aaron Zhang (wuqi.zhang@connect.ust.hk) ([@Troublor](https://github.com/Troublor)).
 Please add issues in this repository or directly contact him if you encounter any problems. 
 
 ## TODO
