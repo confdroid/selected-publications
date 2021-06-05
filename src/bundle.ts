@@ -53,9 +53,7 @@ async function main() {
 
             if (!Array.isArray(arr)) {
                 console.error("[Error] JSON object in", file, "is not an array");
-                if (dryRun) {
-                }
-                exitCode = 1;
+                if (dryRun) exitCode = 1;
                 continue;
             }
             const validations: Joi.ValidationResult[] = [];
