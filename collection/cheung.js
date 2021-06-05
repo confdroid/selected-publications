@@ -1,7 +1,6 @@
 module.exports = [
     {
-        title: "ContractGuard: Defend Ethereum Smart Contracts with Embedded Intrusion
-               Detection",
+        title: "ContractGuard: Defend Ethereum Smart Contracts with Embedded Intrusion Detection",
         date: "2020",
         authors: [
             "Xinming Wang", "Jiahao He", "Zhijian Xie", "Gansen Zhao", "Shing-Chi Cheung"
