@@ -21,6 +21,7 @@ async function main() {
         abstract: Joi.string(),
         bibtex: Joi.string(),
         projectUrl: Joi.string(),
+        slidesUrl: Joi.string(),
     });
 
     const dryRun = process.argv[2] === '--dry-run';
@@ -60,7 +61,7 @@ async function main() {
             }
             const validations: Joi.ValidationResult[] = [];
             arr.forEach(obj => {
-                const r = schema.validate(obj);
+                const r = schema.validate(obj, {allowUnknown: true});
                 validations.push(r);
                 if (!r.error) {
                     if (!obj.paperUrl) obj.paperUrl = null;
