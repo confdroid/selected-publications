@@ -8,14 +8,16 @@ module.exports = [
         venue: "Full name of the conference or journal name",
         venueShort: "abbreviation of conference or journal, e.g., ESEC/FSE",
         tags: [
-            "Tag 1",
-            "Tag 2"
+            "Tags are those keywords used to categorize the publication by:",
+            "Research topic",
+            "Methodology",
+            "Users can use tags to filter and find the publications they are interested in"
         ],
         abstract: "(optional) abstract of your paper",
         projectUrl: "(optional) project url",
         paperUrl: "(optional) paper url",
         slidesUrl: "(optional) slides url",
-        bibtex: `
+        bibtex: ` (optional)
             @article{paper
                 ......
             }
