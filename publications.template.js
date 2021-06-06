@@ -14,6 +14,10 @@ module.exports = [
             "Please consider reuse the existing tags in the publication website: http://sccpu2.cse.ust.hk/castle/publication/",
             "Users can use tags to filter and find the publications they are interested in"
         ],
+        awards: [
+            "Any awards received by this paper:",
+            "Distinguished Paper"
+        ],
         abstract: `
             (optional) abstract of your paper (support multiline)
         `,
