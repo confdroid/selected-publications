@@ -80,5 +80,44 @@ Detecting bugs in deep learning software at the architecture level provides addi
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
         `
+    },
+    {
+        title: "Boosting automated program repair with bug-inducing commits",
+        date: "2020",
+        authors: [
+            "Ming Wen", "Yepang Liu", "Shing-Chi Cheung"
+        ],
+        venue: "42nd International Conference on Software Engineering (NIER Track)",
+        venueShort: "ICSE NIER",
+        tags: [
+            "Program Repair"
+        ],
+        abstract: `
+The search space explosion problem is a long-standing challenge for search-based automated program repair (APR). The operation space, which defines how to select appropriate mutation operators, and the ingredient space, which defines how to select appropriate code elements as fixing ingredients, are two major factors that determine the search space. Conventional approaches mainly devise fixing strategies via learning from frequent fixing patterns based on substantial patches collected from open-source projects. In this paper, we propose a new direction for search-based APR, that is to repair a bug via learning from how the bug was introduced instead of learning from how other bugs are frequently fixed. Our empirical study reveals that substantial mutation operators and fixing ingredients required to fix a bug can be inferred from the commit that introduced the bug. Based on the findings of our empirical study, we devised a preliminary fixing strategy based on bug-inducing commits, which is able to repair 8 new bugs that cannot be repaired by the state-of-the-art techniques. Such results demonstrate that our proposed new idea for searched-based APR is promising.
+        `,
+        projectUrl: "",
+        paperUrl: "",
+        slidesUrl: "",
+        bibtex: `
+            @inproceedings{DBLP:conf/icse/Wen0C20,
+  author    = {Ming Wen and
+               Yepang Liu and
+               Shing{-}Chi Cheung},
+  editor    = {Gregg Rothermel and
+               Doo{-}Hwan Bae},
+  title     = {Boosting automated program repair with bug-inducing commits},
+  booktitle = {{ICSE-NIER} 2020: 42nd International Conference on Software Engineering,
+               New Ideas and Emerging Results, Seoul, South Korea, 27 June - 19 July,
+               2020},
+  pages     = {77--80},
+  publisher = {{ACM}},
+  year      = {2020},
+  url       = {https://doi.org/10.1145/3377816.3381743},
+  doi       = {10.1145/3377816.3381743},
+  timestamp = {Mon, 03 May 2021 16:42:27 +0200},
+  biburl    = {https://dblp.org/rec/conf/icse/Wen0C20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+        `
     }
 ]
