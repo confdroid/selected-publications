@@ -53,6 +53,18 @@ npm test
 If no errors are printed in the console, you are good to push it on GitHub. 
 Your publications will automatically added on CASTLE HomePage. 
 
+## About Display Order
+
+The default order in the [Publication](http://sccpu2.cse.ust.hk/castle/publication/) page is `date descending` (the latest publication is shown on the top).
+The date of each publication is defined by the [`date` field](./publications.template.js#L4) in declaration file. 
+The value of `date` field is a [ECMA date string](https://262.ecma-international.org/11.0/#sec-date-time-string-format), e.g., `2021` and `2021-12-31`. 
+If only year is provided, it will be considered as `year-01-01`. 
+Please try to give precise publication date. 
+It is discouraged to only provider year in the date string. 
+
+The [Publication](http://sccpu2.cse.ust.hk/castle/publication/) page has its own sort control panel, which can sort publications by title, author, date, or search similarity with or without reverse order. 
+
+
 ## Contact
 
 This repository and publication website are maintained by Wuqi Aaron Zhang (wuqi.zhang@connect.ust.hk) ([@Troublor](https://github.com/Troublor)).

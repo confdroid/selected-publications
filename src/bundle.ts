@@ -10,7 +10,12 @@ import * as fs from "fs";
 async function main() {
     const schema: Joi.Schema = Joi.object().keys({
         title: Joi.string().min(1).required(),
-        date: Joi.string().min(1),
+        date: Joi.string().min(1).custom(((value, helpers) => {
+            const d = new Date(value);
+            const errorString = `'${value}' is an invalid date string. Please refer to https://262.ecma-international.org/11.0/#sec-date-time-string-format`;
+            if (isNaN(d.getTime())) throw new Error(errorString)
+            return value;
+        }), 'validate date string'),
         authors: Joi.array().min(1).items(Joi.string()).required(),
         venue: Joi.string().min(1).required(),
         venueShort: Joi.string().min(1).required(),
