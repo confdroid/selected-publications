@@ -6,7 +6,7 @@ module.exports = [
             "Bingyu Shen", "Lili Wei", "Chengcheng Xiang", "Yudong Wu", "Mingyao Shen", "Yuanyuan Zhou", "Xinxin Jin"
         ],
         venue: "the 30th USENIX Security Symposium, Vancouver, BC, Canada, Aug 11-13 2021",
-        venueShort: "Usenix Security",
+        venueShort: "USENIX Security",
         tags: [
             "Android",
             "User study",
