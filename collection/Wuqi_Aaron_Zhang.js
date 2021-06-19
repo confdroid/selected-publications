@@ -1,7 +1,7 @@
 module.exports = [
   {
     "title": "ÐArcher: Detecting On-Chain-Off-Chain Synchronization Bugs in Decentralized Applications",
-    "date": "2021",
+    "date": "2021-08-23",
     "authors": [
       "Wuqi Zhang", "Lili Wei", "Shuqing Li", "Yepang Liu", "Shing-Chi Cheung"
     ],
@@ -15,14 +15,8 @@ module.exports = [
     In this work, we investigate the challenges of synchronizing on-chain and off-chain data in Ethereum-based DApps. We present two types of bugs that could result in inconsistencies between the on-chain and off-chain layers. To help detect such on-chain-off-chain synchronization bugs, we introduce a state transition model to guide the testing of DApps, and propose two effective oracles to facilitate the automatic identification of bugs. We build the first testing framework, ÐArcher, to detect on-chain-off-chain synchronization bugs in DApps. We have evaluated ÐArcher on 11 popular real-world DApps. ÐArcher achieves high precision (99.3%), recall (87.6%), and accuracy (89.4%) in bug detection and significantly outperforms the baseline methods. It has found 15 real bugs in the 11 DApps. So far, six of the 15 bugs have been confirmed by the developers and three have been fixed. These promising results demonstrate the usefulness of ÐArcher.
     `,
     "projectUrl": "https://github.com/Troublor/darcher",
+    'paperUrl': 'https://arxiv.org/pdf/2106.09440.pdf',
     "bibtex": `
-@article{zhangDArcherDetectingOnChainOffChain2021,
-  title = {{{\\DH Archer}}: {{Detecting On}}-{{Chain}}-{{Off}}-{{Chain Synchronization Bugs}} in {{Decentralized Applications}}},
-  author = {Zhang, Wuqi and Wei, Lili and Li, Shuqing and Liu, Yepang and Cheung, Shing-Chi},
-  year = {2021},
-  pages = {13},
-  language = {en}
-}
     `
   }
 ]
