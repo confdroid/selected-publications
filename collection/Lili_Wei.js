@@ -21,8 +21,8 @@ module.exports = [
         paperUrl: "http://cseweb.ucsd.edu/~byshen/files/sec21-shen.pdf",
     },
     {
-        title: "Can Systems Explain Permissions Better? Understanding Users' Misperceptions under Smartphone Runtime Permission Model",
-        date: "2021-08-11",
+        title: "Logging Practices with Mobile Analytics: An Empirical Study on Firebase",
+        date: "2021-05-17",
         authors: [
             "Julian Harty", "Haonan Zhang", "Lili Wei", "Luca Pascarella", "Maurício Aniche", "Weiyi Shang"
         ],
