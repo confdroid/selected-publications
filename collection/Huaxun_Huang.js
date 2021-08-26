@@ -5,7 +5,7 @@ module.exports = [
     "authors": [
       "Huaxun Huang", "Ming Wen", "Lili Wei", "Yepang Liu", "Shing-Chi Cheung"
     ],
-    "venue": "Proceedings of the 29th ACM Joint European SoftwareEngineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE ’21)",
+    "venue": "Proceedings of the 36th IEEE/ACM International Conference on Automated Software Engineering (ASE '21)",
     "venueShort": "ASE",
     "tags": [
       "Android", "Compatibility Issues", "XML Configurations"
