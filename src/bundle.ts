@@ -7,6 +7,8 @@ import glob from 'glob';
 import path from "path";
 import * as fs from "fs";
 
+const HOSTNAME = 'https://castlelab.github.io/selected-publications'
+
 async function main() {
     const schema: Joi.Schema = Joi.object().keys({
         title: Joi.string().min(1).required(),
@@ -22,6 +24,7 @@ async function main() {
         tags: Joi.array().items(Joi.string()),
         awards: Joi.array().items(Joi.string()),
         paperUrl: Joi.string().allow(null, ''),
+        arxivUrl: Joi.string().allow(null, ''),
         abstract: Joi.string().allow(null, ''),
         bibtex: Joi.string().allow(null, ''),
         projectUrl: Joi.string().allow(null, ''),
@@ -66,13 +69,22 @@ async function main() {
                 const r = schema.validate(obj, {allowUnknown: true});
                 validations.push(r);
                 if (!r.error) {
+                    const processRelativeUrl = (url: string | null): string | null => {
+                        if (!url) return url;
+                        return url.replace("{ASSETS}", path.join(HOSTNAME, 'assets'))
+                    }
                     if (!obj.paperUrl) obj.paperUrl = null;
+                    if (!obj.arxivUrl) obj.arxivUrl = null;
                     if (!obj.abstract) obj.abstract = null;
                     if (!obj.bibtex) obj.bibtex = null; else obj.bibtex = obj.bibtex.trim();
                     if (!obj.projectUrl) obj.projectUrl = null;
                     if (!obj.slidesUrl) obj.slidesUrl = null;
                     if (!obj.tags) obj.tags = [];
                     if (!obj.awards) obj.awards = [];
+
+                    obj.paperUrl = processRelativeUrl(obj.paperUrl);
+                    obj.slidesUrl = processRelativeUrl(obj.slidesUrl);
+
                     collection.push(obj);
                 }
             });

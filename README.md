@@ -5,6 +5,11 @@ This repository collects the publications in CASTLE Research Group.
 CASTLE members can push their new publications in this repository. 
 The publication website of CASTLE homepage will fetch data in this repository and display the publications [here](http://sccpu2.cse.ust.hk/castle/publication/).
 
+## ✨ New Features
+
+- Now we support hosting paper's author version or slides in this repository. Just put your preprints or slides in the [assets](.assets) folder and refer to them in the publication declaration file with `{ASSETS}` as url prefix. For example, `"paperUrl": "{ASSETS}/DArcher-FSE21.pdf`, which will be resolved as `https://castlelab.github.io/selected-publications/assets/DArcher-FSE21.pdf`.
+
+
 ## Add Your Publication
 
 ### Clone or Pull the Project

@@ -22,8 +22,9 @@ module.exports = [
             (optional) abstract of your paper (support multiline)
         `,
         projectUrl: "(optional) project url",
-        paperUrl: "(optional) paper url",
-        slidesUrl: "(optional) slides url",
+        arxivUrl: "(optional) the arxiv version of your paper",
+        paperUrl: "(optional) author version of your paper. You can put the pdf file in assets folder and refer to it here with {ASSETS}/your-paper.pdf",
+        slidesUrl: "(optional) slides url. You can put the file in assets folder and refer to it here with {ASSETS}/your-slides.pdf",
         bibtex: ` (optional)
             @article{paper
                 ......
